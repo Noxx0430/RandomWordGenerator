@@ -1,0 +1,170 @@
+/*==============================
+  グローバル要素CSS
+==============================*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #2b2b2b;
+  color: #f3f3f3;
+  font-size: 14px;
+  font-family: 'Yu Gothic Medium', 'Arial', sans-serif;
+  line-height: 15px;
+  user-select: none;
+}
+
+body::-webkit-scrollbar{
+  width: 2px;
+  height: 2px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #fff;
+}
+
+label{
+  margin: 5px 0 5px 0;
+  cursor: pointer;
+}
+
+input[type='text'], input[type='number']{
+  margin: 0 2px 0 5px;
+  padding: 2px 3px;
+  background: none;
+  border: solid 1px #888;
+  border-radius: 3px;
+  color: #f3f3f3;
+  outline: none;
+}
+
+input[type='text']:focus, input[type='number']:focus{
+  border: solid 1px #88ffff;
+}
+
+input[type='checkbox']{
+  position: relative;
+  top: 1px;
+  margin: 0 2px 0 0;
+}
+
+input[type='button']{
+  padding: 2px 5px;
+  background: none;
+  border: solid 1px #888;
+  border-radius: 3px;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+
+input[type='button']:hover{
+  border: solid 1px #aaa;
+}
+
+input[type='button']:active{
+  border: solid 1px #ccc;
+  background: #333;
+}
+
+textarea{
+  resize: none;
+  padding: 5px;
+  background: none;
+  border: solid 1px #888;
+  border-radius: 3px;
+  color: #f3f3f3;
+  outline: none;
+}
+
+textarea::-webkit-scrollbar{
+  width: 2px;
+  height: 2px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+  background: #fff;
+}
+
+
+
+/*==============================
+  クラス要素CSS
+==============================*/
+
+.setting_area{
+  width: calc(100% - 100px);
+  max-width: 500px;
+  margin: 30px auto 0;
+  padding: 10px;
+  border: solid 1px #f3f3f3;
+  border-radius: 5px;
+}
+
+.setting_area label{
+  display: block;
+  width: 100%;
+}
+
+.setting_area label input[type="number"]{
+  width: calc(100% - 90px);
+}
+
+.NOG{
+  margin: 0 0 28px 0;
+}
+
+.setting_content{
+  width: 100%;
+  margin: 0 0 15px 0;
+  padding: 0 0 5px 0;
+  border-bottom: solid 1px #888;
+  box-sizing: border-box;
+}
+
+.open_advanced_setting_btn, .reset_btn{
+  float: right;
+  position: relative;
+  top: -20px;
+  width: 70px;
+  margin: 0 0 -12px 5px;
+  font-size: 12px;
+}
+
+.all_word_textarea{
+  display: none;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.genelate_area{
+  position: relative;
+  width: 100%;
+}
+
+.genelate_btn{
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  width: 100px;
+  transform: translateX(-50%);
+}
+
+.result_area{
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  width: calc(100% - 100px);
+  transform: translateX(-50%);
+  font-weight: bold;
+  text-align: center;
+  user-select: text;
+}
+
+.result_area div{
+  padding: 0 0 12px 0;
+  margin: 0 0 12px 0 ;
+  border-bottom: solid 1px #888;
+}

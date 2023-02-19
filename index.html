@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>ヘンテコ文字列メーカー</title>
+  </head>
+  <body>
+
+    <div class="setting_area" id="settingArea">
+      <div class="setting_content" id="settingContent"></div>
+      <label for="wordCount">文字数<input type="number" id="wordCount">文字</label>
+      <label for="numberOfGenelate" class="NOG">生成数<input type="number" id="numberOfGenelate">個</label>
+      <input type="button" value="詳細設定&#9660;" class="open_advanced_setting_btn" id="openAdvancedSettingBtn">
+      <input type="button" value="設定初期化" class="reset_btn" id="resetBtn">
+      <textarea class="all_word_textarea" id="allWordTextarea">
+        ||ひらがな||あいうえお||カタカナ||アイウエオ
+      </textarea>
+    </div>
+
+    <div class="genelate_area">
+      <input type="button" value="生成" class="genelate_btn" id="genelateBtn">
+      <div class="result_area" id="resultArea"></div>
+    </div>
+
+    <!-- END -->
+    <div class="hide" style="display: none;">
+      <textarea id="backTextarea"></textarea>
+      <textarea id="backTextarea2"></textarea>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
